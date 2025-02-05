@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área e perímetro</title>
+    <style>
+        body{
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+        }
+
+        .container{
+            margin: 20%;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Exercicio de calcular área e perímetro</h1>
+        <label for="largura">Digite a largura:</label> 
+        <input type="number" id="largura">
+        <label for="comprimento">Digite o comprimento:</label> 
+        <input type="number" id="comprimento">
+
+        <button onclick="calcular()">Calcular</button>
+
+        <p id="resultado"></p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
