@@ -24,8 +24,9 @@ ul{
 li{
     list-style: none;
     padding: 5px;
-    border: 1px solid #ffffff;
+    border: 1px solid  #87644b;
     align-items: center;
+    color: #fce4d3;
 }
 
 button{

@@ -8,15 +8,20 @@ let resultado = document.getElementById('resultado')
 let numero = document.getElementById('numero');
 
 function verificar(){
+  
     let resp = ''
    do{ 
-    numbers.push(parseInt(numero.value));
-    let resp = prompt('Digite "S" para continuar ou "N" para parar')
-    limparNumber()
-    listandoNumeros()
-
-    if(resp === 'N' || resp === 'n'){
-        verificarTamanho()
+    if(numero.value === ''){
+        alert('Por favor, digite um número')
+    } else{
+        numbers.push(parseInt(numero.value));
+        let resp = prompt('Digite "S" para continuar ou "N" para parar')
+        limparNumber()
+        listandoNumeros()
+        if(resp === 'N' || resp === 'n'){
+            verificarTamanho()
+            break
+        }
     }
     } while (resp === 'S' || resp === 's');    
 }
@@ -45,3 +50,5 @@ function listandoNumeros(){
     adiciona.innerHTML= numbers[numbers.length - 1]
     lista.appendChild(adiciona)
 }
+
+
