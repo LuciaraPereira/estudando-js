@@ -4,20 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maior ou menor</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>Maior ou menor</h1>
-    <p>Digite números aleatórios e descubra o menor e maior</p>
-
-    <input type="number" id="numero">
-
-    <button onclick="verificar()">Verifcar</button>
-
-    <p id="resultado"></p>
-
-    <ul id="listaNumeros"></ul>
-
+    <main>
+        <h1>Maior ou menor</h1>
+        <p>Digite números aleatórios e descubra o menor e maior</p>
+    
+        <div class="inputs">
+            <input type="number" id="numero">
+            <button onclick="verificar()">Verifcar</button>
+        </div>
+    
+        <p id="resultado"></p>
+    
+        <ul id="listaNumeros"></ul>
+    
+    </main>
+   
     <script src="script.js"></script>
     
 </body>
