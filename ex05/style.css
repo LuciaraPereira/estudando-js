@@ -6,8 +6,25 @@
 body{
     text-align: center;
     background-color: #b45784;
+    color: #ffffff;
 }
 img{
     width: 300px;
     height: auto;
+    margin: 10px;
+}
+
+.tipos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    margin: 30px;
+}
+
+fieldset{
+    margin: 10px 400px 10px 400px;
+    padding: 30px;
 }
