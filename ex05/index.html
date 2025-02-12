@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema bilheteria de metrô</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Fazer um algoritmo para ajudar a bilheteria do metrô. O operador deve informar o tipo do bilhete
+(unitário, duplo ou 10 viagens) e o valor pago pelo passageiro. O sistema deve mostrar, então, a
+quantidade de bilhetes possíveis e o troco que o passageiro deve receber. Considere a seguinte
+tabela de preço: Bilhete unitário 5,30 Bilhete duplo 10,60 Bilhete de 10 viagens 52,00 -->
+    <h1>Metrô Lulu</h1>
+
+    <label for="tipo">Informe o tipo do bilhete:</label>
+    <form>
+        <fieldset>
+            <input type="radio" id="bilhete_unitario"> <label for="unitario">Unitário</label>
+            <input type="radio" id="bilhete_duplo"> <label for="duploo">Duplo</label>
+            <input type="radio" id="bilhete_dezena"> <label for="dezena">10 bilhetes</label>
+        </fieldset>
+
+        <label for="valor">Valor pago:</label> <input type="number" id="valor_pago">
+    </form>
+
+    <div id="qtd_possivel">Quantidade de bilhete(s):</div>
+    <div id="troco">Troco:</div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
