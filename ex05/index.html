@@ -11,7 +11,11 @@
 (unitário, duplo ou 10 viagens) e o valor pago pelo passageiro. O sistema deve mostrar, então, a
 quantidade de bilhetes possíveis e o troco que o passageiro deve receber. Considere a seguinte
 tabela de preço: Bilhete unitário 5,30 Bilhete duplo 10,60 Bilhete de 10 viagens 52,00 -->
-    <h1>Metrô Lulu</h1>
+
+<main>
+    <h1>Metrô da Lulu</h1>
+
+    <img src="images/metro.png" alt="desenho de um metrô com a personagem Lulu na frente>
 
     <label for="tipo">Informe o tipo do bilhete:</label>
     <form>
@@ -22,11 +26,12 @@ tabela de preço: Bilhete unitário 5,30 Bilhete duplo 10,60 Bilhete de 10 viage
         </fieldset>
 
         <label for="valor">Valor pago:</label> <input type="number" id="valor_pago">
+        <button onclick="confirmar()">confirmar</button>
     </form>
 
     <div id="qtd_possivel">Quantidade de bilhete(s):</div>
     <div id="troco">Troco:</div>
-    
+</main>
     <script src="script.js"></script>
 </body>
 </html>

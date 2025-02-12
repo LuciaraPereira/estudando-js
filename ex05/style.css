@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    text-align: center;
+    background-color: #b45784;
+}
+img{
+    width: 300px;
+    height: auto;
+}
