@@ -19,21 +19,20 @@ tabela de preço: Bilhete unitário 5,30 Bilhete duplo 10,60 Bilhete de 10 viage
 
 <div class="tipos">
 
-    <form>
         <label for="tipo">Informe o tipo do bilhete:</label>
         <fieldset>
-            <input type="radio" id="bilhete_unitario"> <label for="unitario">Unitário</label>
-            <input type="radio" id="bilhete_duplo"> <label for="duploo">Duplo</label>
-            <input type="radio" id="bilhete_dezena"> <label for="dezena">10 bilhetes</label>
+            <input type="radio" name="tipo_bilhete" id="bilhete_unitario" value="unitario"> <label for="bilhete_unitario">Unitário</label>
+            <input type="radio" name="tipo_bilhete"  id="bilhete_duplo" value="duplo"> <label for="bilhete_duplo">Duplo</label>
+            <input type="radio" name="tipo_bilhete"  id="bilhete_dezena" value="dezena"> <label for="bilhete_dezena">10 bilhetes</label>
         </fieldset>
 
-        <label for="valor">Valor pago:</label> <input type="number" id="valor_pago">
+        <label for="valor_pago">Valor pago:</label> <input type="number" id="valor_pago" name="valor_pago">
         <button onclick="confirmar()">confirmar</button>
-    </form>
 </div>
 
-    <div id="qtd_possivel">Quantidade de bilhete(s):</div>
-    <div id="troco">Troco:</div>
+    <div id="qtd_possivel">Quantidade de bilhete(s) possíveis: </div>
+    <div id="total_bilhetes">Total de bilhete(s) comprado(s): </div>
+    <div id="troco">Troco: </div>
 </main>
     <script src="script.js"></script>
 </body>
