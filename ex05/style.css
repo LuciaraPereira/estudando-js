@@ -7,9 +7,10 @@ body{
     text-align: center;
     background-color: #b45784;
     color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 img{
-    width: 300px;
+    width: 200px;
     height: auto;
     margin: 10px;
 }
@@ -20,9 +21,37 @@ img{
     align-items: center;
     margin: 30px;
     flex-direction: column;
+    gap: 10px;
 }
 
 fieldset{
     margin: 10px 400px 10px 400px;
     padding: 30px;
+}
+
+.resultados{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.btn-confirmar{
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #8b335d;
+    border: none;
+    color: #fff;
+    font-size: 15px;
+}
+
+.btn-confirmar:hover{
+    background-color: #b8437c;
+}
+
+input#valor_pago{
+    padding: 12px;
+    width: 50px;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
 }
