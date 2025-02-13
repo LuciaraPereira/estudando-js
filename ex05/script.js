@@ -21,15 +21,27 @@ function confirmar(){
         let troco = valor_pago.value-valor_tipo_bilhete ;
         let quantidade = valor_pago.value / valor_tipo_bilhete;
         console.log(troco);
-        resultado_troco.innerHTML += troco;
+        resultado_troco.innerHTML += troco.toFixed(2);
         resultado_qtd.innerHTML +=  Math.floor(quantidade);
         total_bilhete.innerHTML += 1
         
     } else if(tipo_bilhete.value === "duplo"){
         let valor_tipo_bilhete = 10.60;
+        let troco = valor_pago.value-valor_tipo_bilhete ;
+        let quantidade = valor_pago.value / valor_tipo_bilhete;
+        console.log(troco);
+        resultado_troco.innerHTML += troco.toFixed(2);
+        resultado_qtd.innerHTML +=  Math.floor(quantidade);
+        total_bilhete.innerHTML += 2
         console.log(valor_tipo_bilhete)
     } else if(tipo_bilhete.value === "dezena"){
         let valor_tipo_bilhete = 52.00;
+        let troco = valor_pago.value-valor_tipo_bilhete ;
+        let quantidade = valor_pago.value / valor_tipo_bilhete;
+        console.log(troco);
+        resultado_troco.innerHTML += troco.toFixed(2);
+        resultado_qtd.innerHTML +=  Math.floor(quantidade);
+        total_bilhete.innerHTML += 10
         console.log(valor_tipo_bilhete)
     } else if(tipo_bilhete.value === ''){
         console.log('Selecione um tipo de bilhete')
