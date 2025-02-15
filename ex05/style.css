@@ -35,7 +35,7 @@ fieldset{
     gap: 15px;
 }
 
-.btns{
+.btn-confirmar{
     padding: 12px;
     border-radius: 20px;
     background-color: #8b335d;
@@ -44,9 +44,24 @@ fieldset{
     font-size: 13px;
 }
 
+
+.btn-reniciar{
+    padding: 12px;
+    border-radius: 20px;
+    background-color: #7e7e7e;
+    border: none;
+    color: #fff;
+    font-size: 13px;
+}
+
 .btn-confirmar:hover{
     background-color: #b8437c;
 }
+
+.btn-reniciar:hover{
+    background-color: #444243;
+}
+
 
 input#valor_pago{
     padding: 12px;
