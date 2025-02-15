@@ -21,7 +21,7 @@ tabela de preço: Bilhete unitário 5,30 Bilhete duplo 10,60 Bilhete de 10 viage
 
         <label for="tipo">Informe o tipo do bilhete:</label>
         <fieldset>
-            <input type="radio" name="tipo_bilhete" id="bilhete_unitario" value="unitario"> <label for="bilhete_unitario">Unitário</label>
+            <input type="radio" name="tipo_bilhete" id="bilhete_unitario" value="unitario" required> <label for="bilhete_unitario">Unitário</label>
             <input type="radio" name="tipo_bilhete"  id="bilhete_duplo" value="duplo"> <label for="bilhete_duplo">Duplo</label>
             <input type="radio" name="tipo_bilhete"  id="bilhete_dezena" value="dezena"> <label for="bilhete_dezena">10 bilhetes</label>
         </fieldset>
@@ -36,9 +36,9 @@ tabela de preço: Bilhete unitário 5,30 Bilhete duplo 10,60 Bilhete de 10 viage
 </div>
 
 <div class="resultados">
-    <div id="qtd_possivel">Quantidade de bilhete(s) possíveis conforme o pacote: </div>
-    <div id="total_bilhetes">Total de bilhete(s) comprado(s): </div>
-    <div id="troco">Troco: </div>
+    <p id="qtd_possivel"></p>
+    <p id="total_bilhetes"> </p>
+    <p id="troco"></p>
 </div>
    
 </main>
