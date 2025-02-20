@@ -9,7 +9,10 @@ let resultado_qtd = document.getElementById('qtd_possivel');
 let total_bilhete = document.getElementById('total_bilhetes')
 
 
-
+function textos(p, texto){
+    let campo = document.getElementsByClassName('textos');
+    campo 
+}
 
 
 function confirmar(){
@@ -23,29 +26,27 @@ function confirmar(){
             let valor_tipo_bilhete = 5.30;
             let troco = valor_pago.value-valor_tipo_bilhete ;
             let quantidade = valor_pago.value / valor_tipo_bilhete;
-            console.log(troco);
+           
             resultado_troco.innerHTML = ' Troco:  '+ troco.toFixed(2);
-            resultado_qtd.innerHTML = ' Quantidade de bilhete(s) possíveis conforme o pacote: '+ Math.floor(quantidade);
+            resultado_qtd.innerHTML = ' Quantidade de bilhete(s) possíveis conforme por pacote: '+ Math.floor(quantidade);
             total_bilhete.innerHTML = 'Total de bilhete(s) comprado(s): 1'
             
         } else if(tipo_bilhete.value === "duplo"){
             let valor_tipo_bilhete = 10.60;
             let troco = valor_pago.value-valor_tipo_bilhete ;
             let quantidade = valor_pago.value / valor_tipo_bilhete;
-            console.log(troco);
-            resultado_troco.innerHTML += troco.toFixed(2);
-            resultado_qtd.innerHTML +=  Math.floor(quantidade);
-            total_bilhete.innerHTML += 2
-            console.log(valor_tipo_bilhete)
+            
+            resultado_troco.innerHTML = ' Troco:  '+ troco.toFixed(2);
+            resultado_qtd.innerHTML = ' Quantidade de bilhete(s) possíveis conforme por pacote: '+ Math.floor(quantidade);
+            total_bilhete.innerHTML = 'Total de bilhete(s) comprado(s): 2'
         } else if(tipo_bilhete.value === "dezena"){
             let valor_tipo_bilhete = 52.00;
             let troco = valor_pago.value-valor_tipo_bilhete ;
             let quantidade = valor_pago.value / valor_tipo_bilhete;
-            console.log(troco);
-            resultado_troco.innerHTML += troco.toFixed(2);
-            resultado_qtd.innerHTML +=  Math.floor(quantidade);
-            total_bilhete.innerHTML += 10
-            console.log(valor_tipo_bilhete)
+
+            resultado_troco.innerHTML = ' Troco:  '+ troco.toFixed(2);
+            resultado_qtd.innerHTML = ' Quantidade de bilhete(s) possíveis conforme por pacote: '+ Math.floor(quantidade);
+            total_bilhete.innerHTML = 'Total de bilhete(s) comprado(s): 10'
         } 
     
     } 

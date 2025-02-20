@@ -15,6 +15,13 @@ img{
     margin: 10px;
 }
 
+.tabela-precos{
+    background-color: #dc6da3;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 13px;
+}
+
 .tipos{
     display: flex;
     justify-content: center;
