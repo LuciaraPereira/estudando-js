@@ -18,7 +18,7 @@ function textos(p, texto){
 function confirmar(){
     let tipo_bilhete = document.querySelector('input[name="tipo_bilhete"]:checked');
     
-   if(tipo_bilhete === null || parseFloat( valor_pago.value) === ''){
+   if(tipo_bilhete === null || parseFloat( valor_pago.value) === '' || parseFloat( valor_pago.value) <=0){
     alert('Selecione um tipo de bilhete ou um valor válido!')
    } else{
 
@@ -28,7 +28,7 @@ function confirmar(){
             let quantidade = valor_pago.value / valor_tipo_bilhete;
            
             resultado_troco.innerHTML = ' Troco:  '+ troco.toFixed(2);
-            resultado_qtd.innerHTML = ' Quantidade de bilhete(s) possíveis conforme por pacote: '+ Math.floor(quantidade);
+            resultado_qtd.innerHTML = ' Quantidade de bilhete(s)/pacotes possíveis: '+ Math.floor(quantidade);
             total_bilhete.innerHTML = 'Total de bilhete(s) comprado(s): 1'
             
         } else if(tipo_bilhete.value === "duplo"){
@@ -37,7 +37,7 @@ function confirmar(){
             let quantidade = valor_pago.value / valor_tipo_bilhete;
             
             resultado_troco.innerHTML = ' Troco:  '+ troco.toFixed(2);
-            resultado_qtd.innerHTML = ' Quantidade de bilhete(s) possíveis conforme por pacote: '+ Math.floor(quantidade);
+            resultado_qtd.innerHTML = ' Quantidade de bilhete(s)/pacotes possíveis: '+ Math.floor(quantidade);
             total_bilhete.innerHTML = 'Total de bilhete(s) comprado(s): 2'
         } else if(tipo_bilhete.value === "dezena"){
             let valor_tipo_bilhete = 52.00;
@@ -45,7 +45,7 @@ function confirmar(){
             let quantidade = valor_pago.value / valor_tipo_bilhete;
 
             resultado_troco.innerHTML = ' Troco:  '+ troco.toFixed(2);
-            resultado_qtd.innerHTML = ' Quantidade de bilhete(s) possíveis conforme por pacote: '+ Math.floor(quantidade);
+            resultado_qtd.innerHTML = ' Quantidade de bilhete(s)/pacotes possíveis: '+ Math.floor(quantidade);
             total_bilhete.innerHTML = 'Total de bilhete(s) comprado(s): 10'
         } 
     
@@ -55,9 +55,12 @@ function confirmar(){
 
 function limparCampo(){
     let valor_pago =  document.getElementById('valor_pago');
-   // let tipo_bilhete = document.querySelectorAll('input[name="tipo_bilhete"]:checked');
+    let tipo_bilhete = document.querySelector('input[name="tipo_bilhete"]:checked');
     valor_pago.value = ''
-    //tipo_bilhete.checked = false
+    
+    if(tipo_bilhete.checked === true){
+        tipo_bilhete.checked = false
+    }
 }
 
 function reniciar(){
